@@ -129,7 +129,8 @@ int main()
 	printf("Selecione uma das opções abaixo:\n\n");
 	printf("\t1 - Registrar\n");
 	printf("\t2 - Consultar\n");
-	printf("\t3 - Deletar\n\n");
+	printf("\t3 - Deletar\n");
+	printf("\t4 - Sair\n\n");
 	printf("Digite sua opção e aperte ENTER:");//fim do menu
 	
 	scanf("%d" , &opcao); //percentagem com o caractere d serve para armazenar a info do numero inteiro e junto com o caracter & informa que o numero foi armazenado na variavel
@@ -148,6 +149,11 @@ int main()
 		
 		case 3:
 		deletar();
+		break;
+		
+		case 4:
+		printf("Programa encerrado.");
+		return 0;
 		break;
 		
 		default:
